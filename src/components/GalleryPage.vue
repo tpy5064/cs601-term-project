@@ -110,6 +110,7 @@ export default {
 
 .gallery-header-title {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .gallery-main {
@@ -120,8 +121,8 @@ export default {
 }
 
 .gallery-container {
-  width: 850px;
-  height: 850px;
+  width: 825px;
+  height: 825px;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
   display: flex;
@@ -140,8 +141,8 @@ export default {
 }
 
 .img-container {
-  width: 275px;
-  height: 275px;
+  width: 370px;
+  height: 370px;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 15px;
   z-index: 2;
@@ -169,6 +170,11 @@ export default {
   .gallery-container {
     width: 600px;
     height: 600px;
+  }
+
+  .img-container {
+    width: 275px;
+    height: 275px;
   }
 }
 </style>
