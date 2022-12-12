@@ -12,21 +12,21 @@
 * Added class names to all elements for ease of styling in coming weeks.
 
 ### November 14, 2022
-** Added CSS styling
-** Media queries for first 4 HTML pages
+* Added CSS styling
+* Media queries for first 4 HTML pages
 
 ### December 10, 2022
-** Added Gallery page
-** Converted project to Vue
+* Added Gallery page
+* Converted project to Vue
 
 ### December 11, 2022
-** Added Languages page
-** Updated media queries to all pages
+* Added Languages page
+* Updated media queries to all pages
 
 ### December 12, 2022
-** Finished All pages
-** Deployed to GitHub pages
-** Link: https://tpy5064.github.io/cs601-project-deployment/
+* Finished All pages
+* Deployed to GitHub pages
+* Link: https://tpy5064.github.io/cs601-project-deployment/
 
 
 ## Project setup
