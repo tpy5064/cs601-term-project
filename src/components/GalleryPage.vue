@@ -3,6 +3,10 @@
     <NavBar />
     <main class="gallery-main">
       <h1 class="gallery-header-title">My Gallery</h1>
+      <h2 class="date">
+        Where you are, it is currently: {{ month }}/{{ date }}/{{ year }}
+        {{ hours }}:{{ minutes }}:{{ seconds }}
+      </h2>
       <section class="gallery-container">
         <div class="gallery">
           <div class="img-container">
@@ -60,6 +64,12 @@ export default {
       img3Subtitle: "River Valley under the clouds",
       img4Src: require("../assets/img/Golden-Fields.jpg"),
       img4Subtitle: "Golden fields",
+      year: 0,
+      month: 0,
+      date: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
     };
   },
   methods: {
@@ -95,6 +105,20 @@ export default {
       this.img4Src = require("../assets/img/Golden-Fields.jpg");
       this.img4Subtitle = "Golden fields";
     },
+    getDateTime() {
+      setInterval(() => {
+        const date = new Date();
+        this.year = date.getFullYear();
+        this.month = date.getMonth() + 1;
+        this.date = date.getDate();
+        this.hours = date.getHours();
+        this.minutes = ("0" + date.getMinutes()).slice(-2);
+        this.seconds = ("0" + date.getSeconds()).slice(-2);
+      }, 1000);
+    },
+  },
+  mounted() {
+    this.getDateTime();
   },
 };
 </script>
